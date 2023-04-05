@@ -18,14 +18,6 @@ jobs:
         key: ${{ secrets.KEY }}
         port: ${{ secrets.PORT }}
         script: |
-          cd prj
-          sudo rm -rf deployBE16
-          touch run.sh
-          echo "git clone https://github.com/jackthepanda96/deployBE16.git" >> run.sh
-          echo "cd deployBE16" >> run.sh
-          echo "sudo go run main.go" >> run.sh
-          sudo chmod +x run.sh
-          ./run.sh
-          rm run.sh
+          docker -ps -a
           
           
