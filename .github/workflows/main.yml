@@ -21,6 +21,7 @@ jobs:
           cd prj
           rm -rf deployBE16
           git clone https://github.com/jackthepanda96/deployBE16.git
+          ls -al
           cd deployBE16
           go run main.go
           
