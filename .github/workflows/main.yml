@@ -24,7 +24,7 @@ jobs:
           echo "git clone https://github.com/jackthepanda96/deployBE16.git" >> run.sh
           echo "cd deployBE16" >> run.sh
           echo "sudo go run main.go" >> run.sh
-          sudo chmod +X run.sh
+          sudo chmod +x run.sh
           ./run.sh
           rm run.sh
           
