@@ -19,9 +19,9 @@ jobs:
         port: ${{ secrets.PORT }}
         script: |
           cd prj
-          rm -rf deployBE16
+          sudo rm -rf deployBE16
           git clone https://github.com/jackthepanda96/deployBE16.git
           ls -al
           cd deployBE16
-          go run main.go
+          sudo go run main.go
           
