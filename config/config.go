@@ -4,7 +4,6 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/joho/godotenv"
 	"github.com/labstack/gommon/log"
 )
 
@@ -32,11 +31,11 @@ func InitConfig() *AppConfig {
 func readConfig() *AppConfig {
 	var result = new(AppConfig)
 
-	err := godotenv.Load(".env")
-	if err != nil {
-		log.Fatal("Cannot read config variable")
-		return nil
-	}
+	// err := godotenv.Load(".env")
+	// if err != nil {
+	// 	log.Fatal("Cannot read config variable")
+	// 	return nil
+	// }
 
 	result.DBUser = os.Getenv("DBUser")
 	result.DBPassword = os.Getenv("DBPassword")
