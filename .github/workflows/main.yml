@@ -19,6 +19,7 @@ jobs:
         port: ${{ secrets.PORT }}
         script: |
           cd prj/
+          rm -rf deployBE16
           git clone https://github.com/jackthepanda96/deployBE16.git
           cd deployBE16/
           go run main.go
